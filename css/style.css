@@ -1,3 +1,12 @@
+/* Media queries */
+@media screen and (min-width: 992px) {
+  .sidebar {
+    min-width: 150px;
+    align-items: flex-start !important;
+  }
+}
+/* /media queries */
+
 /* Rules */
 body {
   font-family: "Roboto", sans-serif;
@@ -25,3 +34,18 @@ nav .navbar-brand:nth-of-type(2) img {
 #nav-icons i:last-of-type {
   color: #ff8f00;
 }
+/* /header */
+/* Main */
+
+main {
+  height: calc(100vh - 70px);
+}
+
+.sidebar {
+  background-color: #051e34;
+  width: 70px;
+  height: 100%;
+  color: white;
+  background-image: url(/img/sidebar-bg.png);
+}
+/* /main */
