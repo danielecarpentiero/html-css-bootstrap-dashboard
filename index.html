@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,7 +26,44 @@
     <title>Dashboard</title>
   </head>
   <body>
-    <header></header>
+    <!-- Header -->
+    <header>
+      <!-- navbar -->
+      <nav
+        class="navbar sticky-top mt-2 mb-2 pe-2 ps-2 bg-body-tertiary flex-shrink-1"
+      >
+        <a class="navbar-brand d-lg-block d-none" href="#">
+          <img class="img-fluid" src="img/logo.svg" alt="logo" />
+        </a>
+        <a class="navbar-brand d-lg-none d-block" href="#">
+          <img src="img/mobile-logo.png" alt="logo-small" />
+        </a>
+        <nav class="navbar bg-body-tertiary flex-grow-1">
+          <form class="container-fluid">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control border-left-0"
+                placeholder="Prova a cercare: lezioni di Laravel"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </form>
+        </nav>
+        <div class="d-flex" id="nav-icons">
+          <i class="fa-solid fa-list-ul d-lg-block d-none"></i>
+          <i class="fa-solid fa-circle-question d-lg-block d-none"></i>
+          <i class="fa-solid fa-ellipsis-vertical d-lg-block d-none"></i>
+          <i class="fa-solid fa-bell"></i>
+        </div>
+      </nav>
+      <!-- /navbar -->
+    </header>
+    <!-- /navbar -->
     <main></main>
     <footer></footer>
     <script

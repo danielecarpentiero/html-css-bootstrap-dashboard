@@ -1,3 +1,27 @@
-* {
-  background-color: red;
+/* Rules */
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* /Rules */
+/* header */
+
+header {
+  height: 70px;
+}
+
+nav .navbar-brand:nth-of-type(2) {
+  width: 40px;
+}
+
+nav .navbar-brand:nth-of-type(2) img {
+  width: 100%;
+}
+
+#nav-icons {
+  gap: 20px;
+  padding-right: 10px;
+}
+
+#nav-icons i:last-of-type {
+  color: #ff8f00;
 }
