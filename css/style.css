@@ -11,12 +11,9 @@
 body {
   font-family: "Roboto", sans-serif;
 }
+
 /* /Rules */
 /* header */
-
-header {
-  height: 70px;
-}
 
 nav .navbar-brand:nth-of-type(2) {
   width: 40px;
@@ -37,15 +34,32 @@ nav .navbar-brand:nth-of-type(2) img {
 /* /header */
 /* Main */
 
-main {
-  height: calc(100vh - 70px);
-}
-
+/* Sidebar */
 .sidebar {
   background-color: #051e34;
   width: 70px;
-  height: 100%;
+  height: calc(100vh - 80px);
   color: white;
   background-image: url(/img/sidebar-bg.png);
 }
+/* /sidebar */
+
+/* main dashboard */
+.dashboard {
+  height: 120px;
+  width: 100%;
+  color: white;
+}
+
+.badge {
+  background-color: #165bba !important;
+  font-size: 1rem;
+}
+
+.plus {
+  border: 2px solid white;
+}
+
+/* /main dashboard */
+
 /* /main */
