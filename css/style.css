@@ -87,8 +87,18 @@ main {
 }
 /* /main dashboard upper */
 /* main dashboard lower */
+
+#left ul .row div {
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+}
+
 #left {
   width: 100%;
+}
+
+.class {
+  width: 30px;
 }
 /* /main dashboard lower */
 /* /main */
