@@ -1,4 +1,11 @@
 /* Media queries */
+
+@media screen and (min-width: 768px) {
+  .dashboard {
+    max-height: 140px !important;
+  }
+}
+
 @media screen and (min-width: 992px) {
   .sidebar {
     min-width: 150px;
@@ -54,11 +61,15 @@ nav .navbar-brand:nth-of-type(2) img {
 }
 /* /sidebar */
 
-/* main dashboard */
+/* main dashboard upper*/
 .dashboard {
-  height: 120px;
   width: 100%;
   color: white;
+  max-height: 265px;
+}
+
+.dashboard .col-12 {
+  padding-bottom: 20px;
 }
 
 .badge {
@@ -70,6 +81,6 @@ nav .navbar-brand:nth-of-type(2) img {
   border: 2px solid white;
 }
 
-/* /main dashboard */
+/* /main dashboard upper */
 
 /* /main */
