@@ -120,5 +120,9 @@ main {
 .class {
   width: 30px;
 }
+
+#graph{
+  height: auto;
+}
 /* /main dashboard lower */
 /* /main */
