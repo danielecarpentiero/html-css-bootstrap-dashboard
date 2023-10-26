@@ -31,6 +31,16 @@ nav .navbar-brand:nth-of-type(2) img {
 #nav-icons i:last-of-type {
   color: #ff8f00;
 }
+
+#basic-addon1,
+.form-control {
+  background: transparent;
+}
+
+.input-group {
+  background-color: #e5e5e5;
+}
+
 /* /header */
 /* Main */
 
