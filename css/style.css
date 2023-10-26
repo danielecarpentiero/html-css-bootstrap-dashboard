@@ -4,12 +4,17 @@
   .dashboard {
     max-height: 140px !important;
   }
+
 }
 
 @media screen and (min-width: 992px) {
   .sidebar {
     min-width: 150px;
     align-items: flex-start !important;
+  }
+
+  #dashboard-container{
+    padding-left: 150px!important;
   }
 }
 /* /media queries */
@@ -21,6 +26,15 @@ body {
 
 /* /Rules */
 /* header */
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 99;
+  background-color: white;
+}
 
 nav .navbar-brand:nth-of-type(2) {
   width: 40px;
@@ -51,6 +65,7 @@ nav .navbar-brand:nth-of-type(2) img {
 /* /header */
 /* Main */
 main {
+  padding-top: 80px ;
   overflow-x: hidden;
 }
 /* Sidebar */
@@ -60,6 +75,10 @@ main {
   height: calc(100vh - 85px);
   color: white;
   background-image: url(/img/sidebar-bg.png);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
 }
 /* /sidebar */
 
@@ -84,6 +103,7 @@ main {
 
 #dashboard-container {
   width: 100%;
+  padding-left: 70px;
 }
 /* /main dashboard upper */
 /* main dashboard lower */
@@ -93,7 +113,7 @@ main {
   border-bottom: 1px solid lightgray;
 }
 
-#left {
+#left  {
   width: 100%;
 }
 
