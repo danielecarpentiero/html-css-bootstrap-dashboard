@@ -99,7 +99,88 @@
               <div class="col-12 order-sm-last col-md-4 col-lg-4 col-xl-3">
                 <h5>
                   Nuovo studente
-                  <span class="plus rounded p-2 pe-3 ps-3 ms-3">+</span>
+                  <span class="plus rounded p-2 pe-3 ps-3 ms-3">
+                    <button type="button" class="btn btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                      <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+                      <div class="offcanvas-body">
+                        <form>
+                          <div class="row">
+                              <div class="col-12 col-md-6">
+                                  <div class="mb-3">
+                                      <label for="input-name" class="form-label">Nome</label>
+                                      <input type="text" class="form-control" id="input-name">
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="mb-3">
+                                      <label for="input-surname" class="form-label">Cognome</label>
+                                      <input type="text" class="form-control" id="input-surname">
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="mb-3">
+                                      <label for="input-email" class="form-label">Email</label>
+                                      <div class="input-group">
+                                          <span class="input-group-text" id="basic-addon1">@</span>
+                                          <input type="email" class="form-control" id="input-email" aria-label="Email" aria-describedby="basic-addon1">
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="mb-3">
+                                      <label for="input-password" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="input-password">
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="mb-3">
+                                      <label for="input-address" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="input-address">
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-6">
+                                  <div class="mb-3">
+                                      <label for="input-city" class="form-label">Città</label>
+                                      <input type="text" class="form-control" id="input-city">
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-4">
+                                  <div class="mb-3">
+                                      <label for="input-state" class="form-label">Stato</label>
+                                      <select class="form-select" id="input-state" aria-label="Default select example">
+                                          <option selected>Scegli...</option>
+                                          <option value="it">Italia</option>
+                                          <option value="fr">Francia</option>
+                                          <option value="gb">Regno Unito</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-2">
+                                  <div class="mb-3">
+                                      <label for="input-postcode" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="input-postcode">
+                                  </div>
+                              </div>
+                              <div class="col-12">
+                                  <div class="mb-4">
+                                      <label for="formFile" class="form-label">Foto</label>
+                                      <input class="form-control" type="file" id="formFile">
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Salva</button>
+                          <button class="btn btn-warning" type="reset">Svuota</button>
+                      </form>
+                      </div>
+                    </div></span>
                 </h5>
               </div>
               <div class="col-12 order-sm-first col-md-4 col-lg-4 col-xl-6">

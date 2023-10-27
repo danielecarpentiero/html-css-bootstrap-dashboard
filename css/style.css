@@ -1,11 +1,20 @@
 /* Media queries */
 
+.offcanvas-end{
+  width: 100%;
+}
+
+
 @media screen and (min-width: 768px) {
   .dashboard {
     max-height: 140px !important;
   }
+  .offcanvas-end{
+    width: 50%!important;
+  }
 
 }
+
 
 @media screen and (min-width: 992px) {
   .sidebar {
@@ -16,12 +25,25 @@
   #dashboard-container{
     padding-left: 150px!important;
   }
+
+  .offcanvas-end{
+    width: calc(100% / 3)!important;
+  }
 }
 /* /media queries */
 
 /* Rules */
+
+:root{
+  --bgcolor: white;
+}
+
 body {
   font-family: "Roboto", sans-serif;
+}
+
+#dashboard-container button{
+  color: var(--bgcolor);
 }
 
 /* /Rules */
@@ -33,7 +55,7 @@ header{
   right: 0;
   left: 0;
   z-index: 99;
-  background-color: white;
+  background-color: var(--bgcolor);
 }
 
 nav .navbar-brand:nth-of-type(2) {
@@ -73,7 +95,7 @@ main {
   background-color: #051e34;
   width: 70px;
   height: calc(100vh - 85px);
-  color: white;
+  color: var(--bgcolor);
   background-image: url(/img/sidebar-bg.png);
   position: fixed;
   bottom: 0;
@@ -84,7 +106,7 @@ main {
 
 /* main dashboard upper*/
 .dashboard {
-  color: white;
+  color: var(--bgcolor);
   max-height: 265px;
 }
 
@@ -98,14 +120,24 @@ main {
 }
 
 .plus {
-  border: 2px solid white;
+  border: 2px solid var(--bgcolor);
+  color: var(--bgcolor);
 }
+
+
 
 #dashboard-container {
   width: 100%;
   padding-left: 70px;
 }
 /* /main dashboard upper */
+
+/* offcanvas */
+.offcanvas-end{
+  width: 100%;
+}
+/* /offcanvas */
+
 /* main dashboard lower */
 
 #left ul .row div {
